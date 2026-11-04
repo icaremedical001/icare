@@ -88,9 +88,9 @@ export default function ContactUsPage() {
   const { utility } = homeContent;
   const phoneHref = `tel:${utility.phone.replaceAll(" ", "")}`;
   const directionsHref =
-    "https://www.google.com/maps/dir/?api=1&destination=22.0641352%2C88.0359571";
+    "https://www.google.com/maps/place/22%C2%B003'49.3%22N+88%C2%B002'13.0%22E/@22.0636997,88.0343743,17z/data=!3m1!4b1!4m4!3m3!8m2!3d22.0636997!4d88.0369492?hl=en&entry=ttu&g_ep=EgoyMDI2MTEwMS4wIKXMDSoASAFQAw%3D%3D";
   const mapEmbed =
-    "https://maps.google.com/maps?q=22.0641352%2C88.0359571&z=15&output=embed";
+    "https://maps.google.com/maps?q=22.06369972229004%2C88.03694915771484&z=17&hl=en&output=embed";
 
   return (
     <main className="site-shell contact-page">

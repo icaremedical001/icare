@@ -2,8 +2,8 @@ import type { ReactNode } from "react";
 import { homeContent } from "@/content/home";
 
 const mapsEmbed =
-  "https://maps.google.com/maps?q=ICARE%20Institute%20of%20Medical%20Sciences%20Haldia&t=&z=14&ie=UTF8&iwloc=&output=embed";
-const mapsHref = "https://maps.google.com/?q=ICARE+Institute+of+Medical+Sciences+Haldia";
+  "https://maps.google.com/maps?q=22.06369972229004%2C88.03694915771484&z=17&hl=en&output=embed";
+const mapsHref = "https://maps.google.com/maps?q=22.06369972229004%2C88.03694915771484&z=17&hl=en";
 
 const socialIcons: Record<string, ReactNode> = {
   Facebook: (
