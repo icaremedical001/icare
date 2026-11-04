@@ -146,7 +146,16 @@ export const homeContent = {
     resourcesHeading: "RESOURCES",
     address:
       "Banbishnupur, P.O. - Balughata, PIN - 721 645, Haldia, Purba Medinipur (W.B), India",
-    copyright: "Copyrights © 2020 by IIMSAR ",
+    about:
+      "ICARE Institute of Medical Sciences and Research & Dr. Bidhan Chandra Roy Hospital, Haldia (IIMSAR & BCRHH) — a modern education centre and healthcare facility of international standards.",
+    socials: [
+      { name: "Facebook", href: "#" },
+      { name: "Instagram", href: "#" },
+      { name: "YouTube", href: "#" },
+      { name: "LinkedIn", href: "#" },
+    ],
+    copyright:
+      "Copyright © 2026 ICARE Institute of Medical Sciences and Research (IIMSAR). All rights reserved.",
     policies: ["Privacy Policy", "Terms and Conditions"],
     partnerLogos: ["b1.jpg", "b3.jpg", "b4.jpg", "b5.jpg", "b6.jpg"],
   },

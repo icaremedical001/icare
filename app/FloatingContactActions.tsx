@@ -14,7 +14,9 @@ export default function FloatingContactActions() {
   const whatsapp = phone.replace(/\D/g, "");
 
   return <div className="floating-contact-actions" aria-label="Quick contact">
+    {/* 
     <a className="floating-contact-button floating-call" href={`tel:${phone}`} aria-label={`Call ${homeContent.utility.phone}`} title={`Call ${homeContent.utility.phone}`}><PhoneIcon /></a>
+    */}
     <div className="floating-right-stack">
       <ScrollToTop />
       <a className="floating-contact-button floating-whatsapp" href={`https://wa.me/${whatsapp}`} target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp" title="Chat on WhatsApp"><WhatsAppIcon /></a>

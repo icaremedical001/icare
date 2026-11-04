@@ -1279,15 +1279,21 @@ h4 {
   position: relative;
 }
 
-.about-photo img {
+
+.about-photo-frame {
+  overflow: hidden;
+  border: 1px solid #b2c6b9;
+  border-radius: 26px;
+  background: #c7d5ce;
+  box-shadow: 0 24px 50px #243e3433;
+}
+
+.about-photo-frame img {
   display: block;
   width: 100%;
   height: 480px;
-  border: 1px solid #b2c6b9;
-  border-radius: 26px;
   object-fit: cover;
   object-position: center 30%;
-  box-shadow: 0 24px 50px #243e3433;
 }
 
 .about-photo::after {
@@ -1898,6 +1904,46 @@ h4 {
   border-left: 1px solid #8294a6;
 }
 
+/* Full footer: brand / links / contact / map columns */
+.footer-brand p {
+  margin: 0 0 18px;
+  color: #d9e9df;
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 46ch;
+}
+
+.footer-brand-logo {
+  display: inline-flex;
+  margin: 6px 0 16px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 8px 22px #17332f2e;
+}
+
+.footer-brand-logo img {
+  display: block;
+  width: min(100%, 230px);
+  max-height: 62px;
+  object-fit: contain;
+}
+
+.footer-contact p {
+  margin: 0 0 14px;
+  color: #d9e9df;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-main .footer-map iframe {
+  height: 220px;
+}
+
+.footer-main .footer-map .map-link {
+  color: #28685f;
+}
+
 .floating-contact-actions {
   position: fixed;
   z-index: 60;
@@ -1915,6 +1961,7 @@ h4 {
   flex-direction: column;
   align-items: center;
   gap: 14px;
+  margin-left: auto; 
 }
 
 .floating-contact-button {

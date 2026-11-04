@@ -3,6 +3,7 @@ import { homeContent } from "@/content/home";
 import ContactForm from "../ContactForm";
 import ScrollAnimator from "../ScrollAnimator";
 import SiteHeader from "../SiteHeader";
+import SiteFooter from "../SiteFooter";
 
 const contactUpdates = [
   "International Yoga Day Celebration 21st June 2023",
@@ -84,7 +85,7 @@ function ContactIcon({ kind }: { kind: "phone" | "pin" | "mail" }) {
 }
 
 export default function ContactUsPage() {
-  const { utility, footer } = homeContent;
+  const { utility } = homeContent;
   const phoneHref = `tel:${utility.phone.replaceAll(" ", "")}`;
   const directionsHref =
     "https://www.google.com/maps/dir/?api=1&destination=22.0641352%2C88.0359571";
@@ -206,32 +207,7 @@ export default function ContactUsPage() {
         </div>
       </section>
 
-      <footer className="site-footer">
-        <div className="footer-main footer-main-compact content-width">
-          <div className="footer-map">
-            <h3>{footer.locationHeading}</h3>
-            <iframe
-              title={footer.locationHeading}
-              src="https://maps.google.com/maps?q=ICARE%20Institute%20of%20Medical%20Sciences%20Haldia&t=&z=14&ie=UTF8&iwloc=&output=embed"
-              loading="lazy"
-            />
-            <a
-              className="map-link"
-              href="https://maps.google.com/?q=ICARE+Institute+of+Medical+Sciences+Haldia"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Open in Maps
-            </a>
-          </div>
-          <div className="footer-resources">
-            <h3>{footer.resourcesHeading}</h3>
-            <p>{footer.address}</p>
-            <a href={phoneHref}>{utility.phone}</a>
-            <a href={`mailto:${utility.email}`}>{utility.email}</a>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

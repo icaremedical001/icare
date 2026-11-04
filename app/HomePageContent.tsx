@@ -1,6 +1,7 @@
 import { homeContent } from "@/content/home";
 import ScrollAnimator from "./ScrollAnimator";
 import SiteHeader from "./SiteHeader";
+import SiteFooter from "./SiteFooter";
 import AdmissionEnquiryForm from "./AdmissionEnquiryForm";
 import DepartmentsSection from "./DepartmentsSection";
 import HeroSlider from "./HeroSlider";
@@ -113,7 +114,9 @@ export default function HomePageContent({
       <section className="about-section section-pad" id="about">
         <div className="about-grid content-width">
           <div className="about-photo">
-            <img src={about.image} alt={about.imageAlt} />
+            <div className="about-photo-frame">
+              <img src={about.image} alt={about.imageAlt} />
+            </div>
           </div>
           <div className="about-copy">
             <h2>{about.title}</h2>
@@ -210,32 +213,7 @@ export default function HomePageContent({
         </div>
       </section>
 
-      <footer className="site-footer">
-        <div className="footer-main footer-main-compact content-width">
-          <div className="footer-map">
-            <h3>{footer.locationHeading}</h3>
-            <iframe
-              title={footer.locationHeading}
-              src="https://maps.google.com/maps?q=ICARE%20Institute%20of%20Medical%20Sciences%20Haldia&t=&z=14&ie=UTF8&iwloc=&output=embed"
-              loading="lazy"
-            />
-            <a
-              className="map-link"
-              href="https://maps.google.com/?q=ICARE+Institute+of+Medical+Sciences+Haldia"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Open in Maps
-            </a>
-          </div>
-          <div className="footer-resources">
-            <h3>{footer.resourcesHeading}</h3>
-            <p>{footer.address}</p>
-            <a href={phoneLink}>{utility.phone}</a>
-            <a href={`mailto:${utility.email}`}>{utility.email}</a>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }
